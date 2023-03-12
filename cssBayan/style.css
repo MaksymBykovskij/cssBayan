@@ -1,1 +1,77 @@
 @import url(reset.css);
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #e5e5e5;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-body {
+    
+}
+
+.mem-item {
+    
+}
+
+.page-body {
+    padding: 40px 0px 40px 0px;
+}
+.title {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+}
+.mems__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mem-item {
+    width: 800px;
+    border: 2px solid #aa0808;
+    cursor: pointer;
+    transition: 0.5s all ;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, .4);
+}
+.mem-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.mem-item__title {
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 10px;
+    position: relative;
+    transition: 0.5s all;
+}
+.mem-item__title:before {
+    display: block;
+    content: '\25BC';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s all;
+}
+
+.mem-item[open] .mem-item__title:before {
+    transform: translateY(-50%) rotate(180deg);
+
+}
+.mem-item:hover {
+    background-color: #aa0808;
+}
+.mem-item__image {
+    cursor: pointer;
+    width: 100%;
+}
