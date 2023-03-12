@@ -8,17 +8,9 @@ body {
 }
 
 .container {
-    max-width: 1024px;
+    max-width: 1080px;
     margin: 0 auto;
     text-align: center;
-}
-
-.page-body {
-    
-}
-
-.mem-item {
-    
 }
 
 .page-body {
@@ -27,7 +19,7 @@ body {
 .title {
     font-weight: 600;
     font-style: normal;
-    font-size: 50px;
+    font-size: 75px;
 }
 .mems__wrapper {
     display: flex;
@@ -74,4 +66,28 @@ body {
 .mem-item__image {
     cursor: pointer;
     width: 100%;
+}
+
+@media (max-width: 820px) {
+    .title {
+        font-size: 65px;
+    }
+    .mem-item {
+        width: 600px;
+    }
+    .mem-item__title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .title {
+        font-size: 50px;
+    }
+    .mem-item {
+        width: 300px;
+    }
+    .mem-item__title {
+        font-size: 15px;
+    }
 }
